@@ -8,7 +8,7 @@ let callCount: number = 0; //### 동일한 분기 Api 호출 횟수 카운트
 const Loading = () => {
     const dispatch = useDispatch();
 
-    const {loading} = useSelector((state: any) => state.loading);
+    const loading = useSelector((state: any) => state.loading);
 
     useEffect(() => {
         //### Axios 요청
